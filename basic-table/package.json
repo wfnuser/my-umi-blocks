@@ -1,5 +1,5 @@
 {
-  "name": "@umi-block/umi-customized-blocks",
+  "name": "@umi-block/table-basic",
   "version": "0.0.1",
   "description": "",
   "main": "src/index.js",
@@ -7,7 +7,7 @@
     "name": "",
     "email": ""
   },
-  "repository": "umijs/umi-blocks/umi-customized-blocks",
+  "repository": "https://github.com/wfnuser/my-umi-blocks/${BLOCKNAME}",
   "scripts": {
     "dev": "umi dev"
   },
@@ -17,8 +17,7 @@
     "@ant-design/pro-layout": "^5.0.0",
     "@ant-design/pro-table": "^2.0.0",
     "@antv/data-set": "^0.11.0",
-    "antd": "^4.0.0-rc.1",
-    "umi-plugin-react": "^1.14.10"
+    "antd": "^4.0.0-rc.1"
   },
   "devDependencies": {
     "umi": "^2.9.0",
