@@ -7,7 +7,7 @@
     "name": "",
     "email": ""
   },
-  "repository": "https://github.com/wfnuser/my-umi-blocks/${BLOCKNAME}",
+  "repository": "https://github.com/wfnuser/my-umi-blocks",
   "scripts": {
     "dev": "umi dev"
   },
