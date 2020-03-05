@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './index.less';
 import { Table, Divider } from 'antd';
+import styles from './index.less';
 
 const columns = [
   {
