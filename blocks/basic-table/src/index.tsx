@@ -1,6 +1,5 @@
 import React from 'react';
 import { Table, Divider } from 'antd';
-import { PageHeaderWrapper } from '@ant-design/pro-layout';
 import styles from './index.less';
 
 const columns = [
@@ -54,11 +53,9 @@ const data = [
 ];
 
 export default () => (
-  <PageHeaderWrapper content="这是一个空白模板页">
-    <div className={styles.container}>
-      <div id="components-table-demo-basic">
-        <Table columns={columns} dataSource={data} />
-      </div>
+  <div className={styles.container}>
+    <div id="components-table-demo-basic">
+      <Table columns={columns} dataSource={data} />
     </div>
-  </PageHeaderWrapper>
+  </div>
 );
