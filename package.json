@@ -2,14 +2,12 @@
   "name": "@umi-block/umi-customized-blocks",
   "version": "0.0.1",
   "description": "",
-  "main": "src/index.js",
   "authors": {
-    "name": "",
-    "email": ""
+    "name": "wfnuser"
   },
   "repository": "umijs/umi-blocks/umi-customized-blocks",
   "scripts": {
-    "dev": "umi dev",
+    "start": "umi block_dev",
     "lint": "npm run lint:js && npm run lint:style && npm run lint:prettier",
     "lint-staged": "lint-staged",
     "lint-staged:js": "eslint --ext .js,.jsx,.ts,.tsx ",
@@ -38,7 +36,7 @@
   },
   "devDependencies": {
     "umi": "^2.9.0",
-    "umi-plugin-block-dev": "^2.0.0",
+    "umi-plugin-block-dev": "^3.0.0",
     "umi-types": "^0.3.0"
   },
   "license": "MIT"
