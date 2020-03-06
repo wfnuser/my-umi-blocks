@@ -10,3 +10,8 @@
 .umi
 .umi-production
 .eslintcache
+/**/.umi
+/**/.umi-production
+
+yarn-error.log
+
