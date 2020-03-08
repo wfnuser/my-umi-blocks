@@ -1,7 +1,7 @@
 import '@ant-design/compatible/assets/index.css';
 import React, { useEffect, useState } from 'react';
 import { Button, Card, Table, Divider, Modal, notification } from 'antd';
-
+import { PageHeaderWrapper } from '@ant-design/pro-layout';
 import { TablePaginationConfig } from 'antd/lib/table';
 import { PlusOutlined } from '@ant-design/icons';
 // import { ConnectProps, ConnectState } from '@/models/connect';
@@ -178,44 +178,46 @@ const TableList: React.FC<TableListProps> = props => {
   };
 
   return (
-    <Card bordered={false}>
-      <div className={styles.tableList}>
-        <div className={styles.tableListOperator}>
-          <Button type="primary" onClick={() => setCreateItemModalVisible(true)}>
-            <PlusOutlined /> 新建项目
-          </Button>
+    <PageHeaderWrapper content="这是一个空白模板页">
+      <Card bordered={false}>
+        <div className={styles.tableList}>
+          <div className={styles.tableListOperator}>
+            <Button type="primary" onClick={() => setCreateItemModalVisible(true)}>
+              <PlusOutlined /> 新建项目
+            </Button>
+          </div>
+          <Table
+            rowKey="id"
+            dataSource={items}
+            pagination={{
+              total: itemsTotalCount,
+              defaultPageSize: 10,
+              showTotal: total => `共 ${total} 条`,
+            }}
+            onChange={handleTableChange}
+            columns={columns}
+            scroll={{ x: 800 }}
+          />
+          <CreateItemModal
+            title="添加项目"
+            visible={createItemModalVisible}
+            onOk={onCreateItem}
+            onCancel={() => {
+              setCreateItemModalVisible(false);
+            }}
+          />
+          <UpdateItemModal
+            title="编辑项目"
+            visible={updateItemModalVisible}
+            onOk={onUpdateItem}
+            itemParams={selectedItemInfo}
+            onCancel={() => {
+              setUpdateItemModalVisible(false);
+            }}
+          />
         </div>
-        <Table
-          rowKey="id"
-          dataSource={items}
-          pagination={{
-            total: itemsTotalCount,
-            defaultPageSize: 10,
-            showTotal: total => `共 ${total} 条`,
-          }}
-          onChange={handleTableChange}
-          columns={columns}
-          scroll={{ x: 800 }}
-        />
-        <CreateItemModal
-          title="添加项目"
-          visible={createItemModalVisible}
-          onOk={onCreateItem}
-          onCancel={() => {
-            setCreateItemModalVisible(false);
-          }}
-        />
-        <UpdateItemModal
-          title="编辑项目"
-          visible={updateItemModalVisible}
-          onOk={onUpdateItem}
-          itemParams={selectedItemInfo}
-          onCancel={() => {
-            setUpdateItemModalVisible(false);
-          }}
-        />
-      </div>
-    </Card>
+      </Card>
+    </PageHeaderWrapper>
   );
 };
 
