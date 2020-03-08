@@ -27,13 +27,15 @@
     "**/*.{js,ts,tsx}": "npm run lint-staged:js"
   },
   "dependencies": {
-    "react": ">=16.0.0",
+    "@ant-design/compatible": "^1.0.1",
     "@ant-design/icons": "^4.0.0-alpha.19",
     "@ant-design/pro-layout": "^5.0.0",
     "@ant-design/pro-table": "^2.0.0",
     "@antv/data-set": "^0.11.0",
     "antd": "^4.0.0-rc.1",
-    "umi-plugin-react": "^1.14.10"
+    "react": ">=16.0.0",
+    "umi-plugin-react": "^1.14.10",
+    "umi-request": "^1.2.19"
   },
   "devDependencies": {
     "@umijs/fabric": "^2.0.2",
