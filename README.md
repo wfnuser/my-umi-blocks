@@ -4,6 +4,7 @@
 
 ### templates
 * EmptyPage
+* TablePageWithModal （包括增删改modal的列表 日常开发推荐使用这个模版）
 
 ### blocks
 * basic-table
