@@ -20,12 +20,12 @@ const QueryForm = (props: IProps) => {
   const { form } = props;
 
   const handleSubmit = () => {
-    props.handleSearch && props.handleSearch(form);
+    return props.handleSearch && props.handleSearch(form);
   };
 
   const handleFormReset = () => {
     form.resetFields();
-    props.handleSearch && props.handleSearch(form);
+    return props.handleSearch && props.handleSearch(form);
   };
 
   return (
