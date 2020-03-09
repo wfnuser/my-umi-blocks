@@ -8,12 +8,17 @@ interface DetailResult {
 }
 
 interface IProps extends ModalProps {
-  onCancel: () => void;
+  onCancel?: () => void;
   detail?: DetailResult;
 }
 
 function DetailModal(props: IProps) {
-  const { visible = true, onCancel, title, detail = { name: '测试', id: '测试id' } } = props;
+  const {
+    visible = true,
+    onCancel = () => {},
+    title,
+    detail = { name: '测试', id: '测试id' },
+  } = props;
   return (
     <Modal title={title} visible={visible} footer={null} onCancel={() => onCancel()}>
       <Row gutter={{ md: 12, lg: 24, xl: 48 }}>
