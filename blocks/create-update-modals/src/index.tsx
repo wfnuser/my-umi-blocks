@@ -6,8 +6,8 @@ import { PlusOutlined } from '@ant-design/icons';
 // import { ConnectProps, ConnectState } from '@/models/conervices/RequestTypes/namespace';
 import { RouteChildrenProps } from 'react-router';
 import { Dispatch, AnyAction } from 'redux';
-import CreateItemModal from './Modals/CreateItemModal';
-import UpdateItemModal from './Modals/UpdateItemModal';
+import CreateItemModal from './CreateItemModal';
+import UpdateItemModal from './UpdateItemModal';
 
 export interface ItemParamsType {
   name: string;
