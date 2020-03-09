@@ -6,15 +6,16 @@ import { TablePaginationConfig } from 'antd/lib/table';
 // import { ConnectProps, ConnectState } from '@/models/connect';
 // import { ListItemsParamsType, ItemParamsType } from '@/services/RequestTypes/namespace';
 import { connect } from 'dva';
+import { RouteChildrenProps } from 'react-router';
+import { Dispatch, AnyAction } from 'redux';
 import styles from './index.less';
 
 // /////////////////////////////////////////
 // 下面的code应该被移除 仅为让代码正常工作
 // 以上的code应该被移除
 // ./model 仅为了让demo代码可以正常工作，应移除
-import { ItemModelState, ItemResult, ListItemsParamsType } from './model';
-import { RouteChildrenProps } from 'react-router';
-import { Dispatch, AnyAction } from 'redux';
+import { ItemModelState, ListItemsParamsType } from './model';
+
 export interface ConnectProps extends RouteChildrenProps {
   dispatch: Dispatch<AnyAction>;
 }
@@ -52,18 +53,7 @@ const TableList: React.FC<TableListProps> = props => {
       dataIndex: 'name',
       width: 120,
     },
-    {
-      title: '操作',
-      width: 340,
-      render: (record: ItemResult) => (
-        <>
-          <a onClick={() => showDetailModal()}>详情</a>
-        </>
-      ),
-    },
   ];
-
-  const showDetailModal = () => {};
 
   const handleTableChange = (pagination: TablePaginationConfig) => {
     setTableParams({

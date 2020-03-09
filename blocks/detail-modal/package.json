@@ -1,0 +1,19 @@
+{
+  "name": "@umi-block/table-basic",
+  "version": "0.0.1",
+  "description": "",
+  "repository": "https://github.com/wfnuser/my-umi-blocks",
+  "license": "MIT",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "umi dev"
+  },
+  "dependencies": {
+    "react": ">=16.0.0",
+    "@ant-design/pro-layout": "^5.0.0",
+    "antd": "^4.0.0-rc.1"
+  },
+  "blockConfig": {
+    "specVersion": "0.1"
+  }
+}
