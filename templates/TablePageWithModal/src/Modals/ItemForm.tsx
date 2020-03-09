@@ -3,7 +3,7 @@ import { Input } from 'antd';
 import { Form } from '@ant-design/compatible';
 import { WrappedFormUtils } from '@ant-design/compatible/lib/form/Form';
 import '@ant-design/compatible/assets/index.css';
-// import { RoleParamsType } from '@/services/RequestTypes/access';
+// import { ItemParamsType } from '@/services/RequestTypes/item';
 
 interface IProps {
   form: WrappedFormUtils;
