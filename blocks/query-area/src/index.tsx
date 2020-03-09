@@ -19,9 +19,7 @@ const formItemLayout = {
 const QueryForm = (props: IProps) => {
   const { form } = props;
 
-  const handleSubmit = () => {
-    return props.handleSearch && props.handleSearch(form);
-  };
+  const handleSubmit = () => props.handleSearch && props.handleSearch(form);
 
   const handleFormReset = () => {
     form.resetFields();

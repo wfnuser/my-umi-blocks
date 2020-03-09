@@ -40,7 +40,7 @@ const TableList: React.FC<TableListProps> = props => {
 
   useEffect(() => {
     fetchTable();
-  }, []);
+  }, [tableParams]);
 
   const { model } = props;
   // TODO: write in better way
@@ -221,7 +221,7 @@ const TableList: React.FC<TableListProps> = props => {
   );
 };
 
-// 请用注释掉的代码替换 应该要定义类型 model换成自己注册model的namespace
+// 请用注释掉的代码替换相应代码 应该要自己定义model state类型并替换
 // export default connect(({ $model_namespace$ }: ConnectState) => ({
 export default connect(({ model }: { model: ItemModelState }) => ({
   model,

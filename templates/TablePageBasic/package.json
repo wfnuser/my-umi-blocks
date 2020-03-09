@@ -1,0 +1,27 @@
+{
+  "name": "@umi-block/empty",
+  "version": "0.0.1",
+  "description": "一个带增删改弹窗的列表页",
+  "repository": "https://github.com/wfnuser/my-umi-blocks/tree/master/templates/EmptyPage",
+  "license": "MIT",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "umi dev"
+  },
+  "dependencies": {
+    "react": ">=16.0.0",
+    "@ant-design/compatible": "^1.0.1",
+    "@ant-design/icons": "^4.0.0-alpha.19",
+    "@ant-design/pro-layout": "^5.0.0",
+    "@ant-design/pro-table": "^2.0.0",
+    "antd": "^4.0.0-rc.1",
+    "classnames": "^2.2.6",
+    "dva": "^2.4.0",
+    "moment": "^2.22.2",
+    "redux": "^4.0.1",
+    "umi-request": "^1.0.0"
+  },
+  "blockConfig": {
+    "specVersion": "0.1"
+  }
+}
